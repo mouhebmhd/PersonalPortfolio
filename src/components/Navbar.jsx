@@ -18,11 +18,11 @@ class Navbar extends React.Component  {
   {
     return (
        <React.Fragment>
-            <div className="container-fluid text-light navbar p-3 d-flex align-items-baseline" style={{padding:"15px"}}>
+            <div className="container-fluid text-light navbar  d-flex align-items-baseline" style={{padding:"15px"}}>
                 <div className="navbarBrand">
                     <img src={logo} alt="" className={style.brandImage} />
                 </div>
-                <div className="navbarItems p-2">
+                <div className="navbarItems ">
                     <nav className=''>
                         <ul className={`${style.navItems} d-flex ` }>
                             <li className="navLink d-flex align-items-center">
@@ -43,8 +43,8 @@ class Navbar extends React.Component  {
                             </li>
                             <li className="navLink d-flex align-items-center">
                                <button className={style.forkButton}>
-                                <LuGitFork className='fs-4 mx-1'/>
-                                <MdStar className='fs-4 mx-1'/>
+                                <LuGitFork className='fs-4 '/>
+                                <MdStar className='fs-4 '/>
 
                                 </button>
                             </li>

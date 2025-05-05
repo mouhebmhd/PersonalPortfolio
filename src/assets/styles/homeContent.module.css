@@ -1,0 +1,39 @@
+.personImage
+{
+    width: 24vw;
+    height: 50vh;
+}
+.handWave
+{
+
+    display: inline-block;
+    animation: waveAnimation 3s infinite linear;
+   /*  animation-name: waveAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+}
+@keyframes  waveAnimation
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    20%
+    {
+        transform: rotate(20deg);
+    }
+    40%
+    {
+        transform: rotate(0deg);
+    }
+    60%
+    {
+        transform: rotate(-20deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+    
+}

@@ -7,6 +7,7 @@ import { FaChartLine } from "react-icons/fa";
 import { GrBlog } from "react-icons/gr";
 import { SiReaddotcv } from "react-icons/si";
 import { LuGitFork } from "react-icons/lu";
+import { MdStar } from "react-icons/md";
 
 class Navbar extends React.Component  {
   constructor(props)
@@ -17,11 +18,11 @@ class Navbar extends React.Component  {
   {
     return (
        <React.Fragment>
-            <div className="container-fluid navbar p-2 d-flex align-items-baseline">
+            <div className="container-fluid text-light navbar p-3 d-flex align-items-baseline" style={{padding:"15px"}}>
                 <div className="navbarBrand">
                     <img src={logo} alt="" className={style.brandImage} />
                 </div>
-                <div className="navbarItems">
+                <div className="navbarItems p-2">
                     <nav className=''>
                         <ul className={`${style.navItems} d-flex ` }>
                             <li className="navLink d-flex align-items-center">
@@ -41,7 +42,11 @@ class Navbar extends React.Component  {
                             <GrBlog className='fs-4 mx-1'/>   Blogs
                             </li>
                             <li className="navLink d-flex align-items-center">
-                               <button className="btn"><LuGitFork className='fs-4 mx-1'/></button>
+                               <button className={style.forkButton}>
+                                <LuGitFork className='fs-4 mx-1'/>
+                                <MdStar className='fs-4 mx-1'/>
+
+                                </button>
                             </li>
                         </ul>
                     </nav>

@@ -1,0 +1,17 @@
+.container
+{
+    background-color: red;
+    width: 100vw;
+    height: 50vh;
+}
+.brandImage
+{
+    width: 75px;
+    height: 50px;
+}
+
+.navItems
+{
+    list-style-type: none;
+    column-gap: 20px;
+}

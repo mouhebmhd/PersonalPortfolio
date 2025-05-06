@@ -1,7 +1,13 @@
 .personImage
 {
-    width: 24vw;
-    height: 50vh;
+    width: 40vw;
+    height: 70vh;
+
+}
+.imageContainer
+{
+    display: flex;
+    justify-content: end;
 }
 .handWave
 {

@@ -6,7 +6,10 @@ export default function HomePage() {
   return (
     <section className={style.mainContent}>
     <Navbar/>
-    <HomeContent></HomeContent>
+    <div className={ "row m-0 p-0 "+style.homeContent} >
+      <HomeContent ></HomeContent>
+    </div>
+    
     </section>
   )
 }

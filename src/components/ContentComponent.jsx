@@ -1,35 +1,38 @@
 import React from 'react'
 import style from "../assets/styles/homeContent.module.css"
-import personImage from "../assets/undraw_studying_n5uj-removebg-preview.png"
+import "../assets/styles/typeWriterStyle.css"
+import personImage from "../assets/home-main.png"
 import Typewriter from 'typewriter-effect';
 
 export default function HomeContent() {
   return (
     <>
-      <div className="row d-flex align-items-center m-0 p-0">
-        <div className="col-lg-6 col-md-6 col-sm-12">
+        <div className="col m-0 p-0  p-2">
           <h1 className='text-light display-3 fw-normal'>Hi There !
-            <span className={style.handWave}>👋🏻</span>
+            <span className={style.handWave}>👋🏻</span></h1>
+            <div style={{ padding: 20, textAlign: "left" }}>
+              <p className='fs-3 text-light'>
+                <span className="display-4 fw-normal">I'm  David Smith ! </span>
             <Typewriter
-  onInit={(typewriter) => {
-    typewriter.typeString('Hello My Name is David Smith !')
-      .callFunction(() => {
-        console.log('String typed out!');
-      })
-      .pauseFor(2500)
-      .deleteAll()
-      .callFunction(() => {
-        console.log('All strings were deleted');
-      })
-      .start();
-  }}
-/>
-          </h1>
+      options={{
+        strings: [
+          "Software Developer",
+          "Freelancer",
+          "MERN Stack Developer",
+          "Open Source Contributor",
+        ],
+        autoStart: true,
+        loop: true,
+        deleteSpeed: 50,
+      }}
+    /></p>
+    </div>
+          
         </div>
-        <div className="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end">
-          <img className={style.personImage} src={personImage} alt="" />
+        <div className={"col  m-0 p-0  " + style.imageContainer}  >
+          
+          <img className={style.personImage}  src={personImage} />
         </div>
-      </div>
     </>
   )
 }

@@ -1,0 +1,40 @@
+.historyTable
+{
+    width: fit-content;
+    margin: auto;
+    margin-top: 25px;
+    
+}
+.historyTable td
+{
+    height: 25px;
+    
+}
+.dayCell
+{
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 2px;
+}
+.activeOne
+{
+    background-color: var(--element1);
+}
+.activeTwo
+{
+    background-color: var(--element2);
+}
+.activeThree
+{
+    background-color: var(--element3);
+}
+.activeFour
+{
+    background-color: var(--element4);
+}
+.activeFive
+{
+    background-color: var(--element5);
+}

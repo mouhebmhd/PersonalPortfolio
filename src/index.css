@@ -15,6 +15,18 @@ html {
 
   --imp-text-color: #c770f0;
 }
+:root
+{
+  --purpleColor:#C16AE5;
+  --element1:#ECECEE;
+  --element2:#5E417A;
+  --element3:#79569A;
+  --element4:#9869BA;
+  --element5:#B07BE4;
+}
+
+
+
 
 .purple {
   color: var(--imp-text-color) !important;

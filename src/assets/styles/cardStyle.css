@@ -1,0 +1,9 @@
+.toolCard 
+{
+    width: 18vw;
+    height: 20vh;
+    border: 1px solid var(--purpleColor);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: -2px 0px 5px 1px var(--purpleColor);
+}

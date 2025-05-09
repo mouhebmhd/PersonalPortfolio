@@ -1,0 +1,20 @@
+.searchInputContainer
+{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.searchInputContainer input[type="text"]
+{
+    outline: none;
+    border: 1px solid #5B317C;
+    background-color: transparent;
+    color: #fff;
+    width: 25vw;
+    font-size: 18px;
+    border-radius: 10px;
+    height: 5vh;
+    padding: 5px ;
+
+
+}

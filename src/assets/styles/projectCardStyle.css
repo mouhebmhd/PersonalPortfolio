@@ -1,0 +1,20 @@
+.projectCard
+{
+    margin-bottom: 25px;
+    box-shadow: -1px 1px 10px 0px var(--purpleColor);
+}
+.projectViewBtn
+{
+    background-color: #5B317C;
+    border-radius: 10px;
+    height: fit-content;
+    width: 8em;
+    color: #fff;
+    padding: 5px;
+    margin-inline: 5px;
+}
+.projectViewBtn:hover
+{
+    color: #5B317C;
+    border: 1px solid #5B317C;
+}

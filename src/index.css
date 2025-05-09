@@ -25,7 +25,10 @@ html {
   --element5:#B07BE4;
 }
 
-
+*
+{
+  box-sizing: border-box !important;
+}
 
 
 .purple {

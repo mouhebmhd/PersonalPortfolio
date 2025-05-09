@@ -8,7 +8,7 @@ export default class CardComponent extends React.Component {
   render()
   {
     return (
-        <div className="toolCard mx-2 d-flex justify-content-center align-items-center">
+        <div className="toolCard m-2 d-flex justify-content-center align-items-center">
         <p className=' text-light' style={{fontSize:"75px"}}>
          {this.props.children}
           </p>

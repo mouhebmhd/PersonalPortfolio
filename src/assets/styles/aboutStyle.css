@@ -1,0 +1,58 @@
+.aboutMeSection
+{
+    display: grid;
+    grid-template-areas: 
+    "textDescription  photoDescription"
+    "contactDescription contactDescription"
+    ;
+    grid-template-rows: 70vh 30vh;
+    grid-template-columns: 70vw 30vw;
+    color: #fff;
+}
+.textDescription
+{
+grid-area: textDescription;
+padding: 25px;
+font-size: 22px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+    .textDescription .specialText 
+    {
+        color: var(--purpleColor);
+    }
+    .textDescription h1 
+    {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .textDescription p 
+    {
+        margin-block: 30px;
+    }
+.photoDescription
+{
+    grid-area: photoDescription;
+}
+.contactDescription
+{
+grid-area:contactDescription ;
+}
+    .contactDescription .specialText 
+    {
+        color: var(--purpleColor);
+    }
+    .socialLink
+    {
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-inline:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--purpleColor);
+        font-size: 20px;
+    }

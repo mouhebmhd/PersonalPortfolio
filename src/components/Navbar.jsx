@@ -8,7 +8,7 @@ import { GrBlog } from "react-icons/gr";
 import { SiReaddotcv } from "react-icons/si";
 import { LuGitFork } from "react-icons/lu";
 import { MdStar } from "react-icons/md";
-
+import  {Link}  from 'react-router-dom';
 class Navbar extends React.Component  {
   constructor(props)
   {
@@ -18,36 +18,36 @@ class Navbar extends React.Component  {
   {
     return (
        <React.Fragment>
-            <div className="container-fluid text-light navbar  d-flex align-items-baseline" style={{padding:"15px"}}>
+            <div className="container-fluid text-light navbar bg-dark  d-flex align-items-center" style={{padding:"15px"}}>
                 <div className="navbarBrand">
                     <img src={logo} alt="" className={style.brandImage} />
                 </div>
                 <div className="navbarItems ">
                     <nav className=''>
-                        <ul className={`${style.navItems} d-flex ` }>
-                            <li className="navLink d-flex align-items-center">
+                        <ul className={`${style.navItems} d-flex align-items-center ` }>
+                            <Link to="/home" className="navLink d-flex align-items-center" style={{textDecoration:"none",color:"#fff"}}>
                             <CiHome className='fs-4 mx-1'/>  Home
-                            </li>
-                            <li className="navLink d-flex align-items-center">
+                            </Link>
+                            <Link  to="/about" className="navLink d-flex align-items-center" style={{textDecoration:"none",color:"#fff"}}>
                             <CiUser className='fs-4 mx-1'/>  About
-                            </li>
-                            <li className="navLink d-flex align-items-center">
+                            </Link>
+                            <Link to="/projects" className="navLink d-flex align-items-center" style={{textDecoration:"none",color:"#fff"}}>
                             <FaChartLine className='fs-4 mx-1'/>  Projects
-                            </li>
-                            <li className="navLink d-flex align-items-center">
+                            </Link>
+                            <Link to="/skills" className="navLink d-flex align-items-center" style={{textDecoration:"none",color:"#fff"}}>
                                                             
-                                <SiReaddotcv className='fs-4 mx-1'/>  Resume
-                            </li>
-                            <li className="navLink d-flex align-items-center">
-                            <GrBlog className='fs-4 mx-1'/>   Blogs
-                            </li>
-                            <li className="navLink d-flex align-items-center">
+                                <SiReaddotcv className='fs-4 mx-1'/>  Skills
+                            </Link>
+                            <Link to="/clients" className="navLink d-flex align-items-center" style={{textDecoration:"none",color:"#fff"}}>
+                            <GrBlog className='fs-4 mx-1'/>   Clients
+                            </Link>
+                            <Link to="/fork" className="navLink d-flex align-items-center" style={{textDecoration:"none",color:"#fff"}}>
                                <button className={style.forkButton}>
                                 <LuGitFork className='fs-4 '/>
                                 <MdStar className='fs-4 '/>
 
                                 </button>
-                            </li>
+                            </Link>
                         </ul>
                     </nav>
                 </div>

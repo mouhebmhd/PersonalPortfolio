@@ -8,6 +8,7 @@ import { FaInstagram } from "react-icons/fa";
 
 import avatarImage from "../assets/avatar.png"
 export default class AboutMe extends Component {
+    
  render()
  {
     return (

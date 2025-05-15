@@ -1,0 +1,17 @@
+.aboutMeDesc
+{
+    line-height: 1.75;
+}
+.skills
+{
+list-style-type: none;
+}
+.quote
+{
+    color: #867892;
+}
+.aboutImage img
+{
+    width: 32vw;
+    height: 50vh;
+}
